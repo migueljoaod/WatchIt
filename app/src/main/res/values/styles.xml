@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fundoAzulVerde">@color/azulVerde</item>
+    </style>
+
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fundoAzulVerde">@color/azulVerde</item>
+        <item name="colorPrimaryDark">@color/azulVerde</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="colorControlNormal">#ffffff</item>
+
+    </style>
+
+</resources>
