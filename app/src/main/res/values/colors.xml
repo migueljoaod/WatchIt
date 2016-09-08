@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="azulVerde">#0c3340</color>
     <color name="branco">#ffffff</color>
+    <color name="fundoBotao">#009688</color>
 
 
 </resources>
