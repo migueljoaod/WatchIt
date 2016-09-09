@@ -7,10 +7,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 
 public class ListaSeriesActivity extends AppCompatActivity {
-
+    private MaterialSearchView searchView;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -18,10 +21,14 @@ public class ListaSeriesActivity extends AppCompatActivity {
         return true;
     }
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_series);
+        //searchView = (MaterialSearchView) findViewById(R.id.search_view);
 
         //Inicializa o toolbar a partir do layout
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -31,8 +38,6 @@ public class ListaSeriesActivity extends AppCompatActivity {
         //para permitir a compatibilidade
         setSupportActionBar(toolbar);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
 
