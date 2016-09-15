@@ -5,17 +5,8 @@
     tools:context=".ListaSeriesActivity">
 
     <item
-        android:id="@+id/action_autorenew"
-        android:icon="@drawable/ic_action_action_lock_outline"
-        android:title="Lock…"
-        app:showAsAction="ifRoom" />
-
-    <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search_white_24dp"
-        android:title="Search…"
-        app:showAsAction="ifRoom" />
-
-
-
+        android:title="Search"
+        app:showAsAction="always"/>
 </menu>
