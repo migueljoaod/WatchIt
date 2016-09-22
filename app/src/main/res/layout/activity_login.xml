@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:hint="Email"
+            android:textColor="@color/branco"
             android:inputType="textEmailAddress"
             android:theme="@style/LoginTheme"/>
 
@@ -36,9 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Senha"
+            android:textColor="@color/branco"
             android:inputType="textPassword"
             android:theme="@style/LoginTheme"
             />
+3
 
         <Button
             android:id="@+id/botao"
