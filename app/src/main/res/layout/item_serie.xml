@@ -21,7 +21,7 @@
         android:background="@color/azulVerde">
 
         <TextView
-            android:id="@+id/text_pais_nome"
+            android:id="@+id/text_serie_nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nome da Série"
@@ -29,7 +29,7 @@
             android:textSize="24sp"/>
 
         <TextView
-            android:id="@+id/text_pais_continente"
+            android:id="@+id/text_serie_ano"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
