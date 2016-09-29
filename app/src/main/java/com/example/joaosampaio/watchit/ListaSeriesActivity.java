@@ -21,7 +21,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 
-public class ListaSeriesActivity extends AppCompatActivity {
+public class ListaSeriesActivity extends AppCompatActivity implements SerieItemRecyclerAdapter.OnFavorito {
     private MaterialSearchView searchView;
 
     private SerieItemRecyclerAdapter mAdapter;
@@ -68,6 +68,7 @@ public class ListaSeriesActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         mAdapter = new SerieItemRecyclerAdapter(this, obterListaDeSeries());
+        mAdapter.setOnFavoritoListener(this);
         recyclerView.setAdapter(mAdapter);
 
         searchView = (MaterialSearchView) findViewById(R.id.search_view);
@@ -96,15 +97,20 @@ public class ListaSeriesActivity extends AppCompatActivity {
                 //Do some magic
             }
         });
-
+        /*
         try {
             run("");
         }catch (Exception e){
 
-        }
+        }*/
 
     }
 
+    @Override
+    public void onFavoritoClick(SerieItem item, boolean checked) {
+        Toast.makeText(ListaSeriesActivity.this,checked+" "+item.getNome(), Toast.LENGTH_SHORT).show();
+    }
+    /*
     private  String run(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
@@ -113,7 +119,7 @@ public class ListaSeriesActivity extends AppCompatActivity {
         try (Response response = client.newCall(request).execute()) {
             return response.body().string();
         }
-    }
+    }*/
 
 }
 
