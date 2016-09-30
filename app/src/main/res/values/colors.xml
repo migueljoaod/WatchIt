@@ -6,6 +6,8 @@
     <color name="azulVerde">#0c3340</color>
     <color name="branco">#ffffff</color>
     <color name="fundoBotao">#009688</color>
+    <color name="fundoFavoritos">#264553</color>
+    <color name="amarelo">#ffce08</color>
 
 
 </resources>

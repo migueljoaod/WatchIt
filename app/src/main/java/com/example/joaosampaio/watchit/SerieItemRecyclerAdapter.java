@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 
+import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -33,14 +34,15 @@ public class SerieItemRecyclerAdapter extends RecyclerView.Adapter<SerieItemView
         holder.anoSerie.setText(item.getAno());
         holder.nomeSerie.setText(item.getNome());
         Picasso.with(mContext).load(item.getImagemSerie()).into(holder.imagemSerie);
-        holder.favorito.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        holder.favorito.setOnFavoriteChangeListener(new MaterialFavoriteButton.OnFavoriteChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+            public void onFavoriteChanged(MaterialFavoriteButton buttonView, boolean favorite) {
                 if (mFavoritoListener != null){
-                    mFavoritoListener.onFavoritoClick(item, isChecked);
+                    mFavoritoListener.onFavoritoClick(item, favorite);
                 }
             }
         });
+
     }
 
     @Override
